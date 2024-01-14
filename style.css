@@ -47,8 +47,10 @@ p {
   padding: 50px;
   color: white;
   line-height: 25px;
+  position: relative;
 }
 
+/* BUTTONS */
 #sedans {
   background-color: hsl(31, 77%, 52%);
 }
@@ -105,4 +107,25 @@ footer {
   width: 80%;
   margin: 10px auto;
   text-align: center;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    max-width: 900px;
+    height: 450px;
+  }
+
+  button {
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+  }
+  footer {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
